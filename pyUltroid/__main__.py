@@ -384,12 +384,7 @@ async def ready():
         except Exception as ef:
             LOGS.info(ef)
     try:
-        # To Let Them know About New Updates and Changes
-        await ultroid_bot(JoinChannelRequest("@kannabotup"))
-    except BaseException:
-        pass
-
-
+        
 def pycli():
     vcasst.start()
     multiprocessing.Process(target=idle).start()
